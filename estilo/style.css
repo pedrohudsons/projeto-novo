@@ -130,6 +130,7 @@ li{
 section#bolo article#uma > nav {
     background-color: var(--cor3);
     text-align: center;
+    border-radius: 5px;
 }
 
 section#bolo article#uma > nav a {
