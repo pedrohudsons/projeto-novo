@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDIDO</title>
+	<link rel="stylesheet" href="estilo/stylepedido.css">
+
+    <script type="text/javascript">
+		function validacao(){
+			if(document.formulario.nome.value == ""){
+				alert("O campo Nome não pode ser vazio.");
+				document.formulario.nome.focus();
+				return false;
+			}
+
+			if(document.formulario.bolo.value == ""){
+                alert("O campo Bolo não pode ser vazio.");				
+                document.formulario.bolo.focus();
+				return false;
+			}
+			
+            if(document.formulario.quantidade.value == ""){
+                alert("O campo Quantidade não pode ser vazio.");				
+                document.formulario.quantidade.focus();
+				return false;
+			}
+
+			if(document.formulario.endereco.value == ""){
+				alert("O campo Endereço não pode ser vazio.");
+				document.formulario.endereco.focus();
+				return false;
+			}
+
+            if(document.formulario.pagamento.value == ""){
+				alert("O campo Forma de Pagamento não pode ser vazio.");
+				document.formulario.pagamento.focus();
+				return false;
+			}
+
+			if(document.formulario.button.value == ""){
+				document.formulario.button.focus();
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<header>
+        <h1>Silmara Bolos</h1>
+        <p>Fazendo você se saborear</p>
+    </header>
+
+    
+
+    <main>
+		<div>
+
+			<h1 id="um">Pedido</h1>
+
+			<form name="formulario" action="index3.html" onsubmit="validacao(); return false;">
+				Nome: <input type="text" name="nome"><br><br>
+				Bolo: <input type="text" name="bolo"><br><br>
+				Quantidade: <input type="int" name="quantidade"><br><br>
+				Endereço: <input type="text" name="endereco"><br><br>
+				Forma de Pagamento: <input type="text" name="pagamento"><br><br>
+				<input type="submit" value="Enviar Pedido">
+			</form><br>
+		</div>
+	</main>
+
+	<nav><a href="index.html">Página principal</a></nav>
+	
+</body>
+</html>
