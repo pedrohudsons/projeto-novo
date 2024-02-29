@@ -68,6 +68,7 @@ nav{
     text-align: center;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.247);
     padding: 10px;
+    border-radius: 5px;
 }
 
 nav > a{
