@@ -179,8 +179,8 @@ aside{
     margin: 70px auto;
     padding: 10px;
     border-radius: 5px;
-    width: 400px;
-    height: 120px;
+    width: auto;
+    height: auto;
 }
 
 aside h3{
